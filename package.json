@@ -1,0 +1,17 @@
+{
+  "name": "circleci-jest-codedev",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/wuttinanDEV/circleci-jest-codedev.git",
+  "author": "<wuttinan.wch@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "test": "jest --config ./jest.config.js"
+  },
+  "devDependencies": {
+    "jest": "^23.6.0"
+  },
+  "dependencies": {
+    "path": "^0.12.7"
+  }
+}

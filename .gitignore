@@ -1,0 +1,12 @@
+# Mac
+.DS_Store
+
+# Node modules
+node_modules
+
+# Test
+coverage
+coverage/**/*.*
+
+# Error log
+yarn-error.log
