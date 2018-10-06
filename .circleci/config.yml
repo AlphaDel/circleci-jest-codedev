@@ -46,6 +46,14 @@ jobs:
       - run:
           name: Upload coverage results to Codecov
           command: node ./node_modules/.bin/codecov
+      
+      - run:
+          name: Call API for notify result
+          command: | 
+            curl -X POST -H 'Content-type: application/json' --data '{"text":"Hello, World!"}' https://enigmatic-plateau-59130.herokuapp.com/webhook
+
+
+        
 
 experimental:
   notify:
