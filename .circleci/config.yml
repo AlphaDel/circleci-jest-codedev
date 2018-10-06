@@ -43,8 +43,8 @@ jobs:
           command: yarn test:coverage
       
       # Codecov
-      - run
-          name: pload coverage results to Codecov
+      - run:
+          name: Upload coverage results to Codecov
           command: node ./node_modules/.bin/codecov
 
 
