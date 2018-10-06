@@ -53,7 +53,9 @@ jobs:
             curl -X POST -H 'Content-type: application/json' --data '{"text":"Hello, World!"}' https://enigmatic-plateau-59130.herokuapp.com/webhook
 
 
-        
+notify:
+  webhooks:
+    - url: https://enigmatic-plateau-59130.herokuapp.com/webhook    
 
 experimental:
   notify:
