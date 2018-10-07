@@ -44,6 +44,11 @@ jobs:
           name: Run test
           command: yarn test:coverage
 
+      - run:
+          name: "JavaScript Test Suite"
+          # yarn here makes sure we are using the local jest binary
+          command: yarn jest -- --ci --testResultsProcessor="jest-junit"
+
       - store_test_results:
           path: test-results/jest
       
