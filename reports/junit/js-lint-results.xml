@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<testsuites>
-<testsuite package="org.eslint" time="0" tests="1" errors="1" name="D:\My Folder\Work\Project\circleci-jest-codedev\index.js">
-<testcase time="0" name="org.eslint.unknown"><error message="Parsing error: The keyword &apos;const&apos; is reserved"><![CDATA[line 1, col 1, Error - Parsing error: The keyword &apos;const&apos; is reserved]]></error></testcase>
-</testsuite>
-</testsuites>
