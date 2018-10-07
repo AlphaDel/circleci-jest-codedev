@@ -43,11 +43,17 @@ jobs:
       - run:
           name: Run test
           command: yarn test:coverage
+
+      - store_test_results:
+          path: coverage
       
       # Codecov
       - run:
           name: Upload coverage results to Codecov
           command: node ./node_modules/.bin/codecov
+
+      
+
 
 notify:
   webhooks:
