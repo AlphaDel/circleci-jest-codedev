@@ -41,13 +41,19 @@ jobs:
 
       # run tests!
       - run:
-          name: Run test
-          command: yarn test:coverage
+          name: Run tests
+          command: yarn test:all
+
+      - store_test_results:
+          path: test-results/jest
       
       # Codecov
       - run:
           name: Upload coverage results to Codecov
           command: node ./node_modules/.bin/codecov
+
+      
+
 
 notify:
   webhooks:
